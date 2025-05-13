@@ -48,7 +48,7 @@ To extract insights and build predictive models that can estimate a patient's ri
 ### 1. Cholesterol Levels & Distribution
 The average cholesterol level across patients is approximately **198.8 mg/dL**, with a **95% confidence interval** of [191.71, 205.88]. This range confirms the central tendency of cholesterol in the clinic population.
 
-![Cholesterol Confidence Interval](plots/CI for Cholesterol level.png)
+![Cholesterol Confidence Interval](plots/CI_for_Cholesterol_level.png)
 
 ---
 
