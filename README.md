@@ -43,10 +43,62 @@ To extract insights and build predictive models that can estimate a patient's ri
   - MaxHR: OR = 0.97 (protective)
 - Visualized predicted probabilities by Age and MaxHR levels
 
-## 📊 Key Insights
-- Age and Sex are strong predictors: older males are at highest risk
-- Higher MaxHR is associated with lower heart disease risk
-- Linear models explain basic patterns; tree-based models capture deeper interactions
+## 💡 Key Insights
+
+### 1. Cholesterol Levels & Distribution
+The average cholesterol level across patients is approximately **198.8 mg/dL**, with a **95% confidence interval** of [191.71, 205.88]. This range confirms the central tendency of cholesterol in the clinic population.
+
+![Cholesterol Confidence Interval](plots/CI for Cholesterol level.png)
+
+---
+
+### 2. Age and Heart Disease
+Patients diagnosed with heart disease have a **mean age of 55.9 years**, with a narrow confidence interval [55.14, 56.66], suggesting a concentrated age group among high-risk individuals.
+
+![Age Distribution with Heart Disease](plots/CI(Age for H.D.).png)
+
+---
+
+### 3. Prevalence of Heart Disease
+Approximately **54% of patients** in the dataset have been diagnosed with heart disease, based on the proportion and 95% confidence interval [0.521, 0.586].
+
+![Heart Disease Proportion](plots/CI(patients with H.D.).png)
+
+---
+
+### 4. Gender-based Cholesterol Differences
+A **two-sample t-test** revealed a statistically significant difference in cholesterol levels between males and females (**p-value < 0.001**). Females had notably higher average cholesterol levels.
+
+![Hypothesis Test: Cholesterol by Sex](plots/Hypothesis Testing(Chol vs sex).png)
+
+---
+
+### 5. Age vs. Maximum Heart Rate
+A **negative linear relationship** was observed between age and maximum heart rate, confirmed with regression and confidence intervals. As age increases, max heart rate decreases.
+
+![Linear Regression - Age vs HR](plots/Linear Reg(age vs HR).png)
+
+---
+
+### 6. Logistic Regression: Heart Disease Prediction
+Logistic regression modeling showed a rising **probability of heart disease** with increasing age and decreasing heart rate, varying by gender and heart rate brackets.
+
+![Logistic Regression Output](plots/Logistic Regression.png)
+
+---
+
+### 7. Multiple Regression (Predicted vs Actual MaxHR)
+A multiple regression model using age, sex, and cholesterol predicted max heart rate reasonably well, though some variation remained.
+
+![Multiple Regression Plot](plots/multiple regression.png)
+
+---
+
+### 8. Random Forest Regression (Hexbin)
+Random Forest outperformed linear models in capturing complex, nonlinear relationships between features and actual heart rate, as shown by dense prediction regions.
+
+![Random Forest Hexbin](plots/Random Forrest.png)
+
 
 ## 🛠️ Tools Used
 - **Language**: R
