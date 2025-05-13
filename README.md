@@ -55,7 +55,7 @@ The average cholesterol level across patients is approximately **198.8 mg/dL**, 
 ### 2. Age and Heart Disease
 Patients diagnosed with heart disease have a **mean age of 55.9 years**, with a narrow confidence interval [55.14, 56.66], suggesting a concentrated age group among high-risk individuals.
 
-![Age Distribution with Heart Disease](plots/CI(Age for H.D.).png)
+![Age Distribution with Heart Disease](plots/CI_HD.png)
 
 ---
 
