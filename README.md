@@ -55,49 +55,49 @@ The average cholesterol level across patients is approximately **198.8 mg/dL**, 
 ### 2. Age and Heart Disease
 Patients diagnosed with heart disease have a **mean age of 55.9 years**, with a narrow confidence interval [55.14, 56.66], suggesting a concentrated age group among high-risk individuals.
 
-![Age Distribution with Heart Disease](plots/CI_HD.png)
+![Age Distribution with Heart Disease](plots/CI_HD_age.png)
 
 ---
 
 ### 3. Prevalence of Heart Disease
 Approximately **54% of patients** in the dataset have been diagnosed with heart disease, based on the proportion and 95% confidence interval [0.521, 0.586].
 
-![Heart Disease Proportion](plots/CI(patients with H.D.).png)
+![Heart Disease Proportion](plots/CI_HD.png)
 
 ---
 
 ### 4. Gender-based Cholesterol Differences
 A **two-sample t-test** revealed a statistically significant difference in cholesterol levels between males and females (**p-value < 0.001**). Females had notably higher average cholesterol levels.
 
-![Hypothesis Test: Cholesterol by Sex](plots/Hypothesis Testing(Chol vs sex).png)
+![Hypothesis Test: Cholesterol by Sex](plots/Hypothesis_Testing.png)
 
 ---
 
 ### 5. Age vs. Maximum Heart Rate
 A **negative linear relationship** was observed between age and maximum heart rate, confirmed with regression and confidence intervals. As age increases, max heart rate decreases.
 
-![Linear Regression - Age vs HR](plots/Linear Reg(age vs HR).png)
+![Linear Regression - Age vs HR](plots/Linear_Reg.png)
 
 ---
 
 ### 6. Logistic Regression: Heart Disease Prediction
 Logistic regression modeling showed a rising **probability of heart disease** with increasing age and decreasing heart rate, varying by gender and heart rate brackets.
 
-![Logistic Regression Output](plots/Logistic Regression.png)
+![Logistic Regression Output](plots/Logistic_Regression.png)
 
 ---
 
 ### 7. Multiple Regression (Predicted vs Actual MaxHR)
 A multiple regression model using age, sex, and cholesterol predicted max heart rate reasonably well, though some variation remained.
 
-![Multiple Regression Plot](plots/multiple regression.png)
+![Multiple Regression Plot](plots/multiple_regression.png)
 
 ---
 
 ### 8. Random Forest Regression (Hexbin)
 Random Forest outperformed linear models in capturing complex, nonlinear relationships between features and actual heart rate, as shown by dense prediction regions.
 
-![Random Forest Hexbin](plots/Random Forrest.png)
+![Random Forest Hexbin](plots/Random_Forrest.png)
 
 
 ## 🛠️ Tools Used
