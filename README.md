@@ -97,7 +97,7 @@ A multiple regression model using age, sex, and cholesterol predicted max heart 
 ### 8. Random Forest Regression (Hexbin)
 Random Forest outperformed linear models in capturing complex, nonlinear relationships between features and actual heart rate, as shown by dense prediction regions.
 
-![Random Forest Hexbin](plots/Random_Forrest.png)
+![Random Forest Plot](plots/Random_Forrest.png)
 
 
 ## 🛠️ Tools Used
